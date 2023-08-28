@@ -31,7 +31,6 @@ include "funcionarios.php";
                     <td><th><?=$funcionario["nome"] ?></th></td>
                     <td><th><?=$funcionario["email"] ?></th></td>
                     <td><th><?=$funcionario["telefone"] ?></th></td>
-                    <td>Editar Visualizar Excluir</td>
                 </tr>
             <?php endforeach; ?>
 

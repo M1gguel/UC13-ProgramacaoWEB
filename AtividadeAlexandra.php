@@ -1,23 +1,42 @@
 <?php
+ $listaAluno = [
+    [
+        "ID" => 1,
+        "nome" => "Miguel Perez Silva",
+        "email" => "miguelpsilva0@gmail.com",
+        "telefone" => "(14) 9999-9999"
+    ]
+    ];
 
+    $listaLivro = [
+        [
+            "ID" => 1,
+            "titulo" => "assassin's creed black flag",
+            "autor" => "Anton Gill",
+            "DataEmprestimo" => "02/01/2023",
+            "DataDevolucao" => "02/02/2023"
+        ],
+        [
+            "ID" => 1,
+            "titulo" => "A História de Um Banana",
+            "autor" => "Will Smith",
+            "DataEmprestimo" => "18/01/2023",
+            "DataDevolucao" => "18/02/2023"
+        ],
+        ];
+    
 class Aluno{
-    private $IDAluno;
+    public $IDAluno;
     public $nome;
     public $dataNascimento;
     public $email;
     public $cpf;
     public $telefone;
     public $celular;
-
-    
-    public function __construct($nome)
-    {
-        $this -> nome = $nome; 
-    }
 }
 
 class Livros{
-    private $IDLivro;
+    public $IDLivro;
     public $titulo;
     public $valor;
     public $autor;
@@ -32,14 +51,6 @@ class Emprestimo{
     public $livro; 
     public $DataEmprestimo;
     public $DataDevolucao;
-
-    public function __construct(Livros $livro, Aluno $aluno)
-    {
-        $this -> livro = $livro;
-        $this -> aluno = $aluno;
-
-        
-    }
 }
 
 class ADM{
