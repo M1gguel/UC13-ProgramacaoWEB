@@ -5,7 +5,7 @@ include "AtividadeAlexandra.php"
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>cadastro de aluno</title>    
+    <title>cadastro de livro</title>    
 </head>
 <body>
     <div>
